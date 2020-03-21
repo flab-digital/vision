@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Introduction - Front Documentation | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="assets/vendor/prism/prism.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../assets/css/theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="assets/css/docs.css">
+</head>
+<body class="bg-light">
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header header-docs">
+    <nav id="logoAndNav" class="navbar navbar-dark fixed-top bg-primary flex-nowrap">
+      <div class="col-md-3 col-xl-2 d-flex align-items-center bg-md-primary-darker mr-0 py-2">
+        <a class="navbar-brand" href="index.html" aria-label="Front">
+          <img src="../assets/svg/logos/logo-white.svg" alt="Logo">
+        </a>
+        <a href="getting-started/changelog.html">
+          <span class="badge badge-light ml-2">v3.0</span>
+        </a>
+      </div>
+
+      <!-- Header Search -->
+      <form class="form-inline input-group input-group-sm input-group-merge input-group-borderless d-none d-md-flex mr-auto ml-md-4" style="max-width: 500px;">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="docsSearch">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+        <input class="js-hs-docs-search form-control" type="text" placeholder="Search..." aria-label="Search..." aria-describedby="docsSearch" data-url="assets/ajax/autocomplete-data-for-documentation-search.json">
+      </form>
+      <!-- End Header Search -->
+
+      <!-- Header Links -->
+      <ul class="navbar-nav header-docs text-nowrap flex-row align-items-center px-3 ml-0 ml-sm-3">
+        <!-- <li>
+          <a class="nav-link" href="#" title="Video Tuts" target="_blank">
+            <i class="fab fa-youtube mr-sm-1"></i>
+            <span class="d-none d-lg-inline-block">Video Tuts</span>
+          </a>
+        </li> -->
+        <!-- <li class="ml-4">
+          <a class="nav-link" href="../snippets/index.html">
+            <i class="fas fa-th mr-sm-1"></i>
+            <span class="d-none d-lg-inline-block">Start Building</span>
+          </a>
+        </li> -->
+        <li class="ml-3 ml-sm-5">
+          <a class="btn btn-sm btn-light text-primary" href="../html/landings/index.html" title="Live Preview">
+            <i class="far fa-eye mr-sm-1"></i>
+            Live Preview
+          </a>
+        </li>
+      </ul>
+      <!-- End Header Links -->
+    </nav>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav class="col-md-3 col-xl-2 bg-white hs-sidebar navbar-expand-md">
+        <div class="d-flex d-md-none justify-content-between mb-3">
+          <!-- Sidebar Search -->
+          <form class="col form-inline input-group-sm">
+            <input class="js-hs-docs-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="assets/ajax/autocomplete-data-for-documentation-search.json">
+          </form>
+          <!-- End Sidebar Search -->
+
+          <!-- Responsive Toggle Button -->
+          <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+            </svg>
+          </button>
+          <!-- End Responsive Toggle Button -->
+        </div>
+
+        <!-- Sidebar Nav -->
+        <div class="collapse navbar-collapse" id="sidebar-nav">
+          <div id="sidebarNav" class="scrollbar hs-sidebar-sticky">
+            <h5 class="hs-sidebar-heading">Getting started</h5>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link active" href="index.html">Introduction</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="getting-started/gulp.html">Gulp</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="getting-started/customization.html">Customization</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="getting-started/credits.html">Credits</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="getting-started/changelog.html">Changelog</a></li>
+            </ul>
+
+            <h5 class="hs-sidebar-heading">Content</h5>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="content/typography.html">Typography</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Icons:</span>
+                <ul class="hs-sidebar-nav ml-2">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="content/exclusive-svg.html">Exclusive SVG set</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="content/font-awesome.html">Font Awesome</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <h5 class="hs-sidebar-heading">Components</h5>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/alerts.html">Alerts</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/avatars.html">Avatars</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/badge.html">Badge</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/breadcrumb.html">Breadcrumb</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/buttons.html">Buttons</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/cards.html">Cards</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/collapse.html">Collapse</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Dividers:</span>
+                <ul class="hs-sidebar-nav ml-2 mb-0">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/css-divider.html">CSS divider</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/svg-divider.html">SVG divider</a></li>
+                </ul>
+              </li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/forms.html">Forms</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/list-group.html">List group</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/navs.html">Navs</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/pagination.html">Pagination</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/progress.html">Progress</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/spinners.html">Spinners</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/step.html">Step</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/sticky-footer.html">Sticky footer</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="components/tables.html">Tables</a></li>
+            </ul>
+
+            <h5 class="hs-sidebar-heading">Utilities</h5>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="utilities/borders.html">Borders</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="utilities/colors.html">Colors</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="utilities/content-alignments.html">Content alignments (with position)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="utilities/links.html">Links</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="utilities/positions.html">Positions</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="utilities/shadows.html">Shadows</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="utilities/sizing.html">Sizing</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="utilities/spacings.html">Spacings</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="utilities/text.html">Text</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="utilities/transforms.html">Transforms</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="utilities/transitions.html">Transitions</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="utilities/others.html">Others</a></li>
+            </ul>
+
+            <h5 class="hs-sidebar-heading">HS Libraries</h5>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/unfold.html">Unfold (Dropdown and others)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/headers.html">Headers</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/header-mega-menu.html">Header mega menu</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/header-fullscreen.html">Header fullscreen</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/header-searches.html">Header searches</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/counters.html">Counters</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/go-to.html">Go-to</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/page-preloader.html">Page preloader</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/progress.html">Progress</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/quantity-counter.html">Quantity counter</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/scroll-nav.html">Scroll nav</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/show-animation.html">Show animation</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/step-form.html">Step form (Wizards)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/sticky-block.html">Sticky block</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/toggle-state.html">Toggle state</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/switch.html">Switch</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/video-bg.html">Video background</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="hs-libraries/video-player.html">Video player</a></li>
+            </ul>
+
+            <h5 class="hs-sidebar-heading">Other Libraries</h5>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/aos.html">Aos (Animate on scroll)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/bootstrap-select.html">Bootstrap select</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/chartjs.html">Chartjs</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/circles.html">Circles (Pie chart)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/clipboard.html">Clipboard</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/countdown.html">Countdown</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/cubeportfolio.html">Cubeportfolio</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/datatables.html">Datatables</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/dropzone.html">Dropzone (Drag n' drop file uploader)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/fancybox.html">Fancybox</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/flatpickr.html">Flatpickr</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/range-slider.html">Range slider</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/leaflet.html">Leaflet (Map)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/parallax.html">Parallax</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/password-strength.html">Password strength</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/slick-carousel.html">Slick carousel</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Social APIs:</span>
+                <ul class="hs-sidebar-nav ml-2 mb-0">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/social-api-facebook.html">Facebook</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/social-api-twitter.html">Twitter</a></li>
+                </ul>
+              </li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/summernote.html">Summernote WYSIWYG</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/tagify.html">Tagify</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/typedjs.html">Typed.js</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link" href="libraries/validation.html">Validation</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Sidebar Nav -->
+      </nav>
+      <!-- End Sidebar -->
+
+      <main class="col-md-9 col-xl-10 px-4 pt-0 pt-md-11 pb-7 ml-md-auto">
+        <div class="pl-xl-2">
+          <div class="row">
+            <!-- Section Nav -->
+            <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block">
+              <ul class="js-scroll-nav hd-doc-section-nav">
+                <li class="hd-doc-section-nav-item active">
+                  <a href="index.html#download-package">Download package</a>
+                  <ul>
+                    <li class="hd-doc-section-nav-item"><a href="index.html#html">HTML</a></li>
+                    <li class="hd-doc-section-nav-item"><a href="index.html#assets">Assets</a></li>
+                  </ul>
+                </li>
+                <li class="hd-doc-section-nav-item">
+                  <a href="index.html#js-structure">JS Structure</a>
+                  <ul>
+                    <li class="hd-doc-section-nav-item"><a href="index.html#core-js">Core JavaScript</a></li>
+                    <li class="hd-doc-section-nav-item"><a href="index.html#essentials-of-hscore-objects">Essentials of HS data-attributes</a></li>
+                    <li class="hd-doc-section-nav-item"><a href="index.html#advantages">Advantages</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- End Section Nav -->
+
+            <div class="col-xl-10 order-xl-1">
+              <div class="hs-docs-content-divider">
+                <h1>Introduction</h1>
+                <p class="lead">Get started with Front, Responsive Website Template for building responsive, mobile-first sites, with Bootstrap and a template starter page.</p>
+              </div>
+
+              <blockquote class="callout callout-danger">
+                <p id="front-is-a-static-template" class="callout-title">Front is a Static HTML Template</p>
+                <p>For the time being, we do <span class="font-weight-bold">NOT</span> offer any tutorials or any other materials on how to integrate Front with any CMS, Web Application framework (including Angular JS, Ruby on Rails and others) or any other similar technology. However, since <span class="font-weight-bold">Front is a static HTML/CSS and JS template</span>, then it <em>should be compatible</em> with any backend technology.</p>
+              </blockquote>
+
+              <div id="download-package" class="hs-docs-content-divider">
+                <h2 class="hs-docs-heading">Download package <a class="anchorjs-link" href="index.html#download-package" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+                <p>Download package contains three main <code class="highlighter-rouge">assets/</code>, <code class="highlighter-rouge">html/</code> and <code class="highlighter-rouge">documentation/</code> folders. Once downloaded, unzip the compressed folder and you'll see something like this:</p>
+
+                <ul>
+                  <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> front/
+                    <ul>
+                      <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> assets/
+                        <ul>
+                          <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> ajax/</li>
+                          <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> css/</li>
+                          <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> img/</li>
+                          <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> include/</li>
+                          <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> js/</li>
+                          <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> scss/</li>
+                          <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> svg/</li>
+                          <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> vendor/</li>
+                          <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> video/</li>
+                        </ul>
+                      </li>
+                      <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> html/
+                        <ul>
+                          <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> app-marketplace/</li>
+                          <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> blog/</li>
+                          <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> course/</li>
+                          <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> landings/</li>
+                          <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> help-desk/</li>
+                          <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> pages/</li>
+                          <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> portfolio/</li>
+                          <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> shop/</li>
+                        </ul>
+                      </li>
+                      <li class="font-size-1"><i class="fas fa-folder-open text-warning mr-1"></i> documentation/..</li>
+                      <li class="font-size-1"><i class="far fa-image fa-fw mr-1"></i> favicon.ico</li>
+                      <li class="font-size-1"><i class="far fa-file-alt fa-fw mr-1"></i> gulpfile.js</li>
+                      <li class="font-size-1"><i class="far fa-file-alt fa-fw mr-1"></i> package.json</li>
+                      <li class="font-size-1"><i class="far fa-file-alt fa-fw mr-1"></i> README.md</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div id="html" class="hs-docs-content-divider">
+                <h2 class="hs-docs-heading">HTML <a class="anchorjs-link" href="index.html#html" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+                <p><code class="highlighter-rouge">html/</code> is the source for HTML pages and contains HTML templates, which you see in the <a href="../html/landings/index.html">online demo</a>. These HTML files can be opened easily in any browser, imported to any project, or modified to suit your needs.</p>
+              </div>
+
+              <div id="assets" class="hs-docs-content-divider">
+                <h2 class="hs-docs-heading">Assets <a class="anchorjs-link" href="index.html#assets" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+                <p><code class="highlighter-rouge">assets/..</code> includes all the assets that are referenced in the HTML pages. Below given folders are used in the template:</p>
+
+                <ul>
+                  <li><code class="highlighter-rouge">css</code> - CSS files</li>
+                  <li><code class="highlighter-rouge">img</code> - Images</li>
+                  <li><code class="highlighter-rouge">ajax</code> - Ajax files</li>
+                  <li><code class="highlighter-rouge">scss</code> - Sass files</li>
+                  <li><code class="highlighter-rouge">js</code> - JavaSscript files</li>
+                  <li><code class="highlighter-rouge">svg</code> - SVG files</li>
+                  <li><code class="highlighter-rouge">vendor</code> - Third-party libraries</li>
+                </ul>
+
+                <blockquote class="callout callout-warning">
+                  <p>Precompiled versions of JavaScript and CSS files are generated with <code class="highlighter-rouge">gulp dist</code> in their respective <code class="highlighter-rouge">dist/assets/js/</code> and <code class="highlighter-rouge">dist/assets/css</code> folders to support the self-contained 'static website'. Learn more about <a href="getting-started/gulp.html#gulp-dist">gulp dist</a>.</p>
+                </blockquote>
+              </div>
+
+              <div id="js-structure">
+                <h2 class="hs-docs-heading">JavaScript structure <a class="anchorjs-link" href="index.html#js-structure" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+              </div>
+
+              <div id="core-js" class="hs-docs-content-divider">
+                <h2 class="hs-docs-heading">Core JavaScript <a class="anchorjs-link" href="index.html#core-js" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+                <p class="g-mb-30">The foundation of the JavaScript structure in Front is based on one main object which does not change the root when the new functionalities are added, but instead, it only extends without affecting the behavior of the core object. The name of the object is <code class="highlighter-rouge">HSCore</code> and the content of this object looks like this:</p>
+
+                <pre>
+                  <code class="language-js" data-lang="js">
+                    /*
+                    * HSCore
+                    * @version: 2.0.0 (Mon, 25 Nov 2019)
+                    * @requires: jQuery v3.0 or later
+                    * @author: HtmlStream
+                    * @event-namespace: .HSCore
+                    * @license: Htmlstream Libraries (https://htmlstream.com/licenses)
+                    * Copyright 2020 Htmlstream
+                    */
+                    'use strict';
+
+                    $.extend({
+                      HSCore: {
+                        init: function () {
+                          $(document).ready(function () {
+                            // Botostrap Tootltips
+                            $('[data-toggle="tooltip"]').tooltip();
+
+                            // Bootstrap Popovers
+                            $('[data-toggle="popover"]').popover();
+                          });
+                        },
+
+                        components: {}
+                      }
+                    });
+
+                    $.HSCore.init();
+                  </code>
+                </pre>
+              </div>
+
+              <div id="essentials-of-hscore-objects" class="hs-docs-content-divider">
+                <h2 class="hs-docs-heading">Essentials of HS data-attributes <a class="anchorjs-link" href="index.html#essentials-of-hscore-objects" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+                <div class="hs-docs-content-divider">
+                  <h3 class="h6">HSCore Settings</h3>
+                  <p><code class="highlighter-rouge">data-hs-*-options</code> - Using the date-attribute, you can completely specify the settings for all plug-in parameters (except for functions) that are in the official documentation. Special cases will be described in the documentation of the corresponding wrappers/plugins. <code class="highlighter-rouge">*-</code> name of the wrapper/plugin.</p>
+
+                  <p>Parameter names must be enclosed in double quotation marks <code class="highlighter-rouge">""</code>. <code class="highlighter-rouge">"param": ...</code></p>
+
+                  <p>
+                    For strings, quotation marks are required.
+                    <code class="highlighter-rouge">"stringParam": "Test string",</code>
+                    <code class="highlighter-rouge">"hexParam": "#ff0000"</code>
+                  </p>
+
+                  <p>For numbers, quotation marks are optional. <code class="highlighter-rouge">"intParam": 10</code></p>
+
+                  <p>For boolean values, quotation marks can lead to not obvious consequences (due to implicit type conversion). It is recommended that you specify Boolean values without quotation marks. <code class="highlighter-rouge">"boolParam": true</code></p>
+
+                  <p>For arrays and objects - quotation marks can lead to errors, this does not apply to elements of arrays and objects, which can be simple types (see the description for simple types above).
+                    <pre><code class="language-html" data-lang="html">
+                      "arrayParam": [1, "Test string", "#ff0000", false, 5],
+                      "objectParam": {
+                        "intParam": 1,
+                        "stringParam": "Test string",
+                        "hexParam": "#ff0000",
+                        "boolParam": false,
+                        "intParam2": 5
+                      }
+                    </code></pre>
+                  </p>
+                </div>
+              </div>
+
+              <div id="advantages" class="hs-docs-content-divider">
+                <h2 class="hs-docs-heading">Advantages <a class="anchorjs-link" href="index.html#advantages" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+                <ul>
+                  <li>Avoiding the probabilities of conflicts between Front codes and third party plugins (libraries).</li>
+                  <li>Intuitive clear architecture.</li>
+                  <li>Everything is structured, each component in its own file and in its component in the main object.</li>
+                  <li>The ability of extending functionality without affecting the behavior of the core object and not changing the existing functionality.</li>
+                  <li>Creation of wrapper components simply solves complicated initializations structures for the users.</li>
+                  <li>Very easy access to any starters components and core settings from anywhere in the template.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- Contact Us -->
+  <div class="position-fixed bottom-0 right-0 bg-light p-3 m-1">
+    <a class="btn btn-sm btn-outline-primary transition-3d-hover" target="_blank" href="../../contact-us.html">
+      <span class="media align-items-center">
+        <i class="far fa-envelope mr-2"></i>
+        <span class="media-body">
+          Contact Us
+        </span>
+      </span>
+    </a>
+  </div>
+  <!-- End Contact Us -->
+
+  <!-- JS Global Compulsory -->
+  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="../assets/vendor/hs-scroll-nav/dist/hs-scroll-nav.min.js"></script>
+  <script src="../assets/vendor/hs-scroll-to-in-overflowed-container/dist/hs-scroll-to-in-overflowed-container.min.js"></script>
+  <script src="assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+  <script src="assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+  <script src="assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+  <script src="assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <script src="../assets/js/hs.core.js"></script>
+  <script src="assets/js/components/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of header
+      var header = new HSHeader($('#header')).init();
+
+      // initialization of scroll nav
+      $('.js-scroll-nav').each(function () {
+        var scrollNav = new HSScrollNav($(this)).init();
+      });
+
+      // initialization scroll to in overflowed container
+      var scrollToInOverflowedContainerNav = new HSScrollToInOverflowedContainer($('#sidebarNav'), {
+        targetEl: "#sidebarNav .hs-sidebar-link.active"
+      }).init();
+    });
+
+    $(window).on('load', function () {
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+    });
+  </script>
+</body>
+</html>
